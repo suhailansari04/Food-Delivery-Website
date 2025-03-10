@@ -1,0 +1,40 @@
+.explore-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.explore-menu-text {
+    width: 50%;
+}
+.explore-menu-list {
+    display: flex;
+    overflow-x: scroll;
+    gap: 30px;
+}
+.explore-menu-list::-webkit-scrollbar {
+    display: none !important;
+}
+.explore-menu-list-item {
+    cursor: pointer;
+    text-align: center;
+}
+.explore-menu-list-item p {
+    cursor: pointer;
+    font-size: max(1.4vw, 16px);
+    color: #747474;
+    margin-top: 10px;
+}
+.explore-menu hr {
+    height: 2px;
+    background-color: #e2e2e2;
+    border: none;
+    margin: 10px 0;
+}
+.explore-menu-list-item .active {
+    width: 130px;
+    border: 4px solid tomato !important;
+    border-radius: 70px;
+    padding: 2px;
+}
+/* If the viewport width (vw) is greater than or equal to the equivalent of 22 pixels, the font size will be 4.5% of the viewport width.
+If the viewport width is less than the equivalent of 22 pixels, the font size will be fixed at 22 pixels. */
